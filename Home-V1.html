@@ -50,6 +50,7 @@
 /* feature: photo right, green band */
 .v4feature__grid{ display:grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(32px,5vw,68px); align-items:center; padding-block: clamp(56px,7vw,96px); }
 .v4feature__media image-slot{ width:100%; height: clamp(320px,38vw,470px); border-radius: var(--r-lg); }
+.v4feature__media image-slot::part(image){ object-position: 50% 50%; }
 .v4feature .lede{ color: rgba(255,255,255,.9); max-width: 50ch; }
 .v4feature em{ font-style: normal; font-weight:700; }
 .v4feature h2{ margin: 6px 0 22px; }
@@ -193,7 +194,7 @@
       </div>
     </div>
     <div class="v4feature__media">
-      <image-slot id="v4-feature" shape="rounded" radius="22" placeholder="Students with local produce"></image-slot>
+      <image-slot id="v4-feature" shape="rounded" radius="22" src="assets/conlee-elementary-kids.webp" placeholder="Students with local produce"></image-slot>
     </div>
   </div>
 </section>
