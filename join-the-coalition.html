@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the Coalition — MA Food for MA Kids</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<style>
+.hero-green{ position:relative; overflow:hidden; }
+.hero-green::before{ content:""; position:absolute; inset:0; background-image:url('assets/pages/join-hero.jpg'); background-size:cover; background-position:center; }
+.hero-green::after{ content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(16,28,13,.92) 0%, rgba(16,28,13,.74) 48%, rgba(16,28,13,.36) 80%, rgba(16,28,13,.12) 100%); }
+.hero-green .wrap{ position:relative; z-index:1; }
+.expectgrid{ display:grid; grid-template-columns: 1fr 0.82fr; gap: clamp(32px,5vw,64px); align-items:center; }
+.expectgrid__media{ margin:0; align-self:stretch; }
+.expectgrid__media img{ width:100%; height:100%; min-height:340px; object-fit:cover; border-radius: var(--r-lg); }
+@media (max-width:860px){ .expectgrid{ grid-template-columns:1fr; } .expectgrid__media img{ min-height:280px; } }
+.formband{ position:relative; overflow:hidden; }
+.formband::before{ content:""; position:absolute; inset:0; background-image:url('assets/pages/join-form-bg.jpg'); background-size:cover; background-position:center; }
+.formband::after{ content:""; position:absolute; inset:0; background: color-mix(in srgb, var(--green) 86%, transparent); }
+.formband .wrap{ position:relative; z-index:1; }
+</style>
+</head>
+<body>
+
+<div class="announce announce__wrap" id="announce">
+  <div class="announce__in">
+    <span>The MA Farm to School bill (S.311 / H.565) passed the Education Committee — <a href="take-action.html">write your legislators →</a></span>
+  </div>
+  <button class="announce__x" aria-label="Dismiss" onclick="document.getElementById('announce').classList.add('is-hidden')">×</button>
+</div>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <nav class="nav">
+      <a href="grant-information.html">Grant Information</a>
+      <a href="policy-priorities.html">Policy Priorities</a>
+      <a href="our-coalition.html">Our Coalition</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header__cta">
+      <a href="take-action.html" class="btn btn-primary btn-only-desktop">Take Action <span class="arr">→</span></a>
+      <button class="burger" aria-label="Open menu" onclick="toggleDrawer(true)"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer__bg" id="drawerBg" onclick="toggleDrawer(false)"></div>
+<aside class="drawer" id="drawer">
+  <button class="drawer__x" aria-label="Close menu" onclick="toggleDrawer(false)">×</button>
+  <a href="grant-information.html">Grant Information</a>
+  <a href="policy-priorities.html">Policy Priorities</a>
+  <a href="our-coalition.html">Our Coalition</a>
+  <a href="faq.html">FAQ</a>
+  <a href="take-action.html" class="btn btn-primary">Take Action <span class="arr">→</span></a>
+</aside>
+
+<!-- HERO (deep green) -->
+<section class="hero-green on-green" data-screen-label="Join hero">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> JOIN US</p>
+    <h1 class="display h-band">BECOME PART OF THE <span class="em">COALITION.</span></h1>
+    <p class="lede">Please sign up below to join the effort to bring high quality school meals and food education to all students across Massachusetts.</p>
+  </div>
+</section>
+
+<!-- A: What signing up means -->
+<section class="section" data-screen-label="What signing up means">
+  <div class="wrap expectgrid">
+   <div>
+    <div class="shead">
+      <p class="eyebrow"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> WHAT TO EXPECT</p>
+      <h2 class="display h-sec">WHAT SIGNING UP <span class="em">MEANS.</span></h2>
+    </div>
+    <div class="chiprows">
+      <div class="chiprow">
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p>Signing up will subscribe you to the MA Food for MA Kids Google Group where you will receive news &amp; action alerts.</p>
+      </div>
+      <div class="chiprow">
+        <span class="chip"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.3 2.8-5 5.5-5s4.9 1.7 5.5 5" stroke-linecap="round"/><path d="M16 5.5l1.2 2.4 2.6.4-1.9 1.9.4 2.6-2.3-1.2" stroke-linejoin="round"/></svg></span>
+        <p>There is an option to be engaged in the Coalition and listed publicly as an organizational supporter of our current priority legislation to create a Massachusetts Farm to School Grant Program and Local Food Incentive Program. If you choose to sign as an organization, you will be listed on the <a class="tlink" href="our-coalition.html">‘Our Coalition’ page</a>.</p>
+      </div>
+      <div class="chiprow">
+        <span class="chip"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4" stroke-linecap="round"/></svg></span>
+        <p>The coalition meets the first Thursday of each month at 2pm — members receive meeting invitations.</p>
+      </div>
+    </div>
+   </div>
+   <figure class="expectgrid__media"><img src="assets/pages/join-expect.jpg" alt="A volunteer holding a crate of freshly harvested vegetables"></figure>
+  </div>
+</section>
+
+<!-- B: Signup form -->
+<section class="section wash-green" data-screen-label="Signup form">
+  <div class="wrap">
+    <div class="shead center">
+      <p class="eyebrow leaf" style="justify-content:center"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> SIGN UP</p>
+      <h2 class="display h-sec">ADD YOUR NAME TO THE <span class="em">COALITION.</span></h2>
+      <p class="lede muted" style="max-width:56ch; margin:16px auto 0;">It takes less than a minute. We'll keep you posted on action alerts, monthly meetings, and ways to advocate for healthy, local school food across Massachusetts.</p>
+    </div>
+    <div class="formcard">
+      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks — you\u2019re on the list!';">
+        <label for="jname">Name</label>
+        <input type="text" id="jname" name="name" autocomplete="name">
+        <label for="jemail">Email</label>
+        <input type="email" id="jemail" name="email" autocomplete="email">
+        <label for="jorg">Organization <span style="font-weight:400; color:color-mix(in srgb,var(--ink) 55%, white)">(optional)</span></label>
+        <input type="text" id="jorg" name="organization" autocomplete="organization">
+        <label class="check"><input type="checkbox" name="public"> List my organization publicly as a coalition supporter.</label>
+        <button type="submit" class="btn btn-primary">Join the coalition <span class="arr">→</span></button>
+      </form>
+      <p class="note">Email <a class="tlink" href="mailto:simca@massfarmtoschool.org">simca@massfarmtoschool.org</a> if you have any questions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- C: Social proof -->
+<section class="section ctaband" data-screen-label="Social proof">
+  <div class="wrap">
+    <h2 class="display h-sec">YOU'LL BE IN GOOD <span class="em">COMPANY.</span></h2>
+    <p class="lede muted">43 partner organizations statewide are already part of the effort.</p>
+    <div class="btns">
+      <a class="btn btn-outline" href="our-coalition.html">Our Coalition <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__top">
+    <div class="footer__brand">
+      <img src="assets/logo-white.png" alt="Massachusetts Food for Massachusetts Kids">
+      <p>Good food and real learning for every Massachusetts student.</p>
+    </div>
+    <div>
+      <h4>Take Action</h4>
+      <ul>
+        <li><a href="take-action.html">Write your legislators</a></li>
+        <li><a href="share-with-your-networks.html">Share with your networks</a></li>
+        <li><a href="join-the-coalition.html">Join the Coalition</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="policy-priorities.html">Policy Priorities</a></li>
+        <li><a href="grant-information.html">Grant Information</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coalition</h4>
+      <ul>
+        <li><a href="our-coalition.html">Our Coalition</a></li>
+        <li><a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© Massachusetts Food for Massachusetts Kids | <a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a> — Coalition coordination provided by <a href="https://massfarmtoschool.org" target="_blank" rel="noopener" style="text-decoration:underline">Massachusetts Farm to School</a>.</span>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(open){
+  document.getElementById('drawer').classList.toggle('open', open);
+  document.getElementById('drawerBg').classList.toggle('open', open);
+}
+</script>
+</body>
+</html>

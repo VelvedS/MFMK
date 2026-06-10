@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grant Information — MA Food for MA Kids</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<style>
+.tlgrid{ display:grid; grid-template-columns: 1fr 0.7fr; gap: clamp(32px,5vw,64px); align-items:start; }
+.tlgrid__media{ margin:0; position:sticky; top:96px; }
+.tlgrid__media img{ width:100%; height: clamp(420px, 70vh, 640px); object-fit:cover; border-radius: var(--r-lg); }
+@media (max-width:860px){ .tlgrid{ grid-template-columns:1fr; } .tlgrid__media{ position:static; } .tlgrid__media img{ height:300px; } }
+</style>
+</head>
+<body>
+
+<div class="announce announce__wrap" id="announce">
+  <div class="announce__in">
+    <span>The MA Farm to School bill (S.311 / H.565) passed the Education Committee — <a href="take-action.html">write your legislators →</a></span>
+  </div>
+  <button class="announce__x" aria-label="Dismiss" onclick="document.getElementById('announce').classList.add('is-hidden')">×</button>
+</div>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <nav class="nav">
+      <a href="grant-information.html" style="color:var(--green)">Grant Information</a>
+      <a href="policy-priorities.html">Policy Priorities</a>
+      <a href="our-coalition.html">Our Coalition</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header__cta">
+      <a href="take-action.html" class="btn btn-primary btn-only-desktop">Take Action <span class="arr">→</span></a>
+      <button class="burger" aria-label="Open menu" onclick="toggleDrawer(true)"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer__bg" id="drawerBg" onclick="toggleDrawer(false)"></div>
+<aside class="drawer" id="drawer">
+  <button class="drawer__x" aria-label="Close menu" onclick="toggleDrawer(false)">×</button>
+  <a href="grant-information.html">Grant Information</a>
+  <a href="policy-priorities.html">Policy Priorities</a>
+  <a href="our-coalition.html">Our Coalition</a>
+  <a href="faq.html">FAQ</a>
+  <a href="take-action.html" class="btn btn-primary">Take Action <span class="arr">→</span></a>
+</aside>
+
+<!-- HERO -->
+<section class="phero" data-screen-label="Grant hero">
+  <div class="wrap">
+    <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> GRANT INFORMATION</p>
+    <h1 class="display h-sec">THE MA FRESH <span class="em">GRANT.</span></h1>
+    <p class="lede muted">Farming Reinforces Education and Student Health — a state grant program helping Massachusetts schools serve more local food and teach students where it comes from.</p>
+  </div>
+</section>
+
+<!-- A: What is MA FRESH -->
+<section class="section" data-screen-label="What is MA FRESH">
+  <div class="wrap tc">
+    <div>
+      <p class="eyebrow"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> ABOUT THE PROGRAM</p>
+      <h2 class="display h-sec">WHAT IS MA <span class="em">FRESH?</span></h2>
+      <p>The Massachusetts FRESH (Farming Reinforces Education and Student Health) Grant is a statewide farm to school and farm to early care grant program established with $1 million in COVID relief funds. The program is administered by the Mass. Department of Elementary and Secondary Education (DESE).</p>
+      <p>The FRESH Grant program is designed to support K-12 and early education and care centers to start up or expand their local foods purchasing and education efforts through infrastructure investments, staff training, and educational initiatives that lead to program success and sustainability. Providing schools with the resources they need to deepen their farm to school programming is a win for our kids, our farmers, and our communities.</p>
+    </div>
+    <figure class="tc__media">
+      <img src="assets/pages/grant-chicopee.jpg" alt="Student receiving a fresh school meal in a cafeteria line">
+      <figcaption>Photo courtesy of Chicopee Fresh.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="linkcard">
+      <p>Want to learn more about current or past grantees? Interested in applying?</p>
+      <a class="btn btn-primary" href="https://www.massfarmtoschool.org/mafresh-grant/" target="_blank" rel="noopener">Learn more <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- B: The bill -->
+<section class="section band-green on-green" data-screen-label="The bill">
+  <div class="wrap tc flip">
+    <figure class="tc__media">
+      <img src="assets/pages/grant-somerville.jpg" alt="Students eating lunch together at school in Somerville">
+    </figure>
+    <div>
+      <p class="eyebrow" style="color:var(--leaf)"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> THE BILL</p>
+      <h2 class="display h-sec">MAKE FARM TO SCHOOL <span class="em">PERMANENT.</span></h2>
+      <p>The Farm to School bill (<a href="https://malegislature.gov/Bills/194/S311" target="_blank" rel="noopener" style="color:var(--leaf); font-weight:700;">S.311</a> / <a href="https://malegislature.gov/Bills/194/H565/Cosponsor" target="_blank" rel="noopener" style="color:var(--leaf); font-weight:700;">H.565</a>) was reported favorably out of the Joint Committee on Education and currently awaits approval by the Joint Committee on Ways &amp; Means.</p>
+      <p>With over $8M in funding requested during the first four application rounds, additional funds are needed to fully support schools across the Commonwealth.</p>
+      <p>Tell your Massachusetts legislators to make the Farm to School programs permanent and support the passage of S.311 / H.565.</p>
+      <div class="btns" style="margin-top:26px">
+        <a class="btn btn-primary" href="https://www.massfarmtoschool.org/wp-content/uploads/2026/03/V3-2025-26-Legislative-Session-Farm-to-School-Bill-Info-Sheet.pdf" target="_blank" rel="noopener">Bill fact sheet</a>
+        <a class="btn btn-outline" href="https://actionnetwork.org/letters/advance-ma-farm-to-school-bill/" target="_blank" rel="noopener">Take Action <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- C: Stat row -->
+<section class="section wash-green" data-screen-label="Stats">
+  <div class="wrap statrow">
+    <div><div class="n">$1M</div><div class="l">initial state funding for the MA FRESH grant program</div></div>
+    <div><div class="n">$8M+</div><div class="l">requested by schools across four application rounds</div></div>
+    <div><div class="n">S.311 / H.565</div><div class="l">the bill to make farm to school permanent</div></div>
+  </div>
+</section>
+
+<!-- D: Timeline -->
+<section class="section" data-screen-label="Timeline">
+  <div class="wrap tlgrid">
+   <div class="tlgrid__main">
+    <div class="shead">
+      <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> HOW WE GOT HERE</p>
+      <h2 class="display h-sec">YEARS OF <span class="em">MOMENTUM.</span></h2>
+      <p class="lede muted" style="max-width:70ch; margin-top:18px;">The MA Food for MA Kids Coalition saw many successes in moving the Farm to School bill forward since its first introduction in 2021. In 2022 we were able to secure funding to implement a pilot grant program, but this one-time appropriation does not establish a permanent Farm to School Grant Program here in Massachusetts.</p>
+    </div>
+    <div class="tl">
+      <div class="tl__era">2021–2022</div>
+      <div class="tl__item"><p>State Representative Pignatelli and Senator Lesser filed <a class="tlink" href="https://malegislature.gov/Bills/192/HD2698" target="_blank" rel="noopener">H.686</a> and <a class="tlink" href="https://malegislature.gov/Bills/192/SD1604" target="_blank" rel="noopener">S.349</a>, respectively, in March 2021 to establish a farm to school grant program within the Department of Elementary and Secondary Education.</p></div>
+      <div class="tl__item"><p>Massachusetts Farm to School (MFTS) hosted a well attended <a class="tlink" href="https://static1.squarespace.com/static/608c463a8f5e8230b52f3edf/t/61789ffcb3190d0f4560b597/1635295228386/2021-10-19-F2S+Grant+Bill+Policy+Briefing+Press+Release.pdf" target="_blank" rel="noopener">policy briefing</a> on October 19th, 2021 with a diverse panel of supporters for the bill.</p></div>
+      <div class="tl__item"><p>In December 2021, Senator Lesser, along with the support of the Legislature, was successful in getting $1,000,000 in funding included in the COVID appropriations bill to fund the first year of this program with American Rescue Plan Act (ARPA) funds.</p></div>
+      <div class="tl__item"><p>On January 4th, 2022, the Massachusetts Joint Education Committee held a public hearing for the bill where 12 individuals testified in favor of the bill — including educators, students, school nutrition staff and community members.</p></div>
+      <div class="tl__item"><p>The bill did not pass out of the Joint Education Committee before the February 2nd deadline.</p></div>
+      <div class="tl__era">2023–2024</div>
+      <div class="tl__item"><p>State Representative Pignatelli and Senator Comerford filed <a class="tlink" href="https://malegislature.gov/Bills/193/H558" target="_blank" rel="noopener">H.558</a> and <a class="tlink" href="https://malegislature.gov/Bills/193/S243" target="_blank" rel="noopener">S.243</a> to establish a permanent Farm to School grant program within DESE.</p></div>
+      <div class="tl__item"><p>In the spring of 2023, 16 K-12 schools and early education programs received nearly $500,000 in the inaugural round of FRESH grants.</p></div>
+      <div class="tl__item"><p>In February 2024, H.558 and S.243 were referred favorably out of the Education Committee to the Ways &amp; Means Committee for consideration.</p></div>
+      <div class="tl__item"><p>In Spring of 2024, DESE awarded the second round of FRESH Grant awards totalling $400,000 to 23 school districts and childcare centers across the Commonwealth to support local food and local food education in schools.</p></div>
+      <div class="tl__item"><p>Together DESE received over $4M in funding requests between the two application rounds of 2023 &amp; 2024.</p></div>
+      <div class="tl__era">2025–2026</div>
+      <div class="tl__item now"><p><strong>Current session:</strong> Representatives Duffy and Vargas and Senator Comerford filed S.311 / H.565; the Joint Committee on Education voted unanimously to advance the bill, now in Ways &amp; Means.</p></div>
+    </div>
+   </div>
+   <figure class="tlgrid__media"><img src="assets/pages/timeline-side.jpg" alt="Fresh local produce harvested for Massachusetts schools"></figure>
+  </div>
+</section>
+
+<!-- E: Closing CTA -->
+<section class="section band-green ctaband on-green" data-screen-label="Grant CTA" style="background-color: rgb(34, 34, 34)">
+  <div class="wrap">
+    <h2 class="display h-band">READY TO <span class="em">APPLY?</span></h2>
+    <p class="lede muted">Interested in applying for FRESH Grant funding?</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://www.massfarmtoschool.org/mafresh-grant/" target="_blank" rel="noopener">Learn more <span class="arr">→</span></a>
+      <a class="btn btn-outline" href="take-action.html">Take Action <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__top">
+    <div class="footer__brand">
+      <img src="assets/logo-white.png" alt="Massachusetts Food for Massachusetts Kids">
+      <p>Good food and real learning for every Massachusetts student.</p>
+    </div>
+    <div>
+      <h4>Take Action</h4>
+      <ul>
+        <li><a href="take-action.html">Write your legislators</a></li>
+        <li><a href="share-with-your-networks.html">Share with your networks</a></li>
+        <li><a href="join-the-coalition.html">Join the Coalition</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="policy-priorities.html">Policy Priorities</a></li>
+        <li><a href="grant-information.html">Grant Information</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coalition</h4>
+      <ul>
+        <li><a href="our-coalition.html">Our Coalition</a></li>
+        <li><a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© Massachusetts Food for Massachusetts Kids | <a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a> — Coalition coordination provided by <a href="https://massfarmtoschool.org" target="_blank" rel="noopener" style="text-decoration:underline">Massachusetts Farm to School</a>.</span>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(open){
+  document.getElementById('drawer').classList.toggle('open', open);
+  document.getElementById('drawerBg').classList.toggle('open', open);
+}
+</script>
+</body>
+</html>

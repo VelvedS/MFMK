@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Policy Priorities — MA Food for MA Kids</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<style>
+.prio{ background: var(--wash-green); border-radius: var(--r-lg); padding: clamp(30px,4.5vw,52px); display:grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(28px,4vw,56px); align-items:center; }
+.prio__tag{ display:inline-block; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color: var(--white); background: var(--teal); border-radius: var(--pill); padding: 6px 14px; margin-bottom: 18px; }
+.prio h3{ font-family: var(--display); text-transform:uppercase; font-size: clamp(26px,2.8vw,38px); margin-bottom: 16px; }
+.prio img{ width:100%; height: clamp(280px,30vw,400px); object-fit:cover; border-radius: var(--r); }
+.allied{ display:grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 34px; }
+.allied .card{ background: var(--white); border-radius: var(--r); padding: 28px 30px; }
+.allied h3{ font-family: var(--display); text-transform:uppercase; font-size: 22px; margin-bottom: 12px; }
+.allied p{ margin:0; font-size:16px; }
+.pill3{ display:grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.pill3 .col{ border-top: 3px solid var(--leaf); padding-top: 20px; }
+.pill3 h3{ font-family: var(--display); text-transform:uppercase; font-size: 21px; margin: 10px 0 8px; }
+.pill3 .num{ font-family: var(--display); font-size: 26px; color: var(--leaf); line-height:1; }
+.pill3 p{ margin:0; font-size:15.5px; color: color-mix(in srgb,var(--ink) 74%, white); }
+@media (max-width:860px){ .prio{ grid-template-columns:1fr; } .prio img{ order:-1; } .allied{ grid-template-columns:1fr; } .pill3{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<div class="announce announce__wrap" id="announce">
+  <div class="announce__in">
+    <span>The MA Farm to School bill (S.311 / H.565) passed the Education Committee — <a href="take-action.html">write your legislators →</a></span>
+  </div>
+  <button class="announce__x" aria-label="Dismiss" onclick="document.getElementById('announce').classList.add('is-hidden')">×</button>
+</div>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <nav class="nav">
+      <a href="grant-information.html">Grant Information</a>
+      <a href="policy-priorities.html" style="color:var(--green)">Policy Priorities</a>
+      <a href="our-coalition.html">Our Coalition</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header__cta">
+      <a href="take-action.html" class="btn btn-primary btn-only-desktop">Take Action <span class="arr">→</span></a>
+      <button class="burger" aria-label="Open menu" onclick="toggleDrawer(true)"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer__bg" id="drawerBg" onclick="toggleDrawer(false)"></div>
+<aside class="drawer" id="drawer">
+  <button class="drawer__x" aria-label="Close menu" onclick="toggleDrawer(false)">×</button>
+  <a href="grant-information.html">Grant Information</a>
+  <a href="policy-priorities.html">Policy Priorities</a>
+  <a href="our-coalition.html">Our Coalition</a>
+  <a href="faq.html">FAQ</a>
+  <a href="take-action.html" class="btn btn-primary">Take Action <span class="arr">→</span></a>
+</aside>
+
+<!-- HERO -->
+<section class="phero" data-screen-label="Policy hero">
+  <div class="wrap">
+    <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> POLICY PRIORITIES</p>
+    <h1 class="display h-sec">OUR 2025–2026 <span class="em">AGENDA.</span></h1>
+    <p class="lede muted">In the 2025-2026 legislative session we are focused on passage of “An act establishing a Massachusetts Farm to School Program” which would codify the MA FRESH farm to school grant program and create a local food incentive program for schools and early education programs.</p>
+  </div>
+</section>
+
+<!-- A: Priority feature -->
+<section class="section" data-screen-label="Priority 01">
+  <div class="wrap">
+    <div class="prio">
+      <div>
+        <span class="prio__tag">Priority 01</span>
+        <h3>Farm to School Program</h3>
+        <p>Farm to school programs strengthen student achievement, improve nutrition, and grow the local economy. A Massachusetts Farm to School Program within the Department of Elementary and Secondary Education will support the infrastructure investments, staff training, and educational initiatives that lead to farm to school program success and sustainability. A local food incentive will help schools and early education programs consistently offer students healthy, locally grown foods as part of school meals. Providing schools with the resources they need to start up or expand local food sourcing and education activities is a win for our kids, our farmers, and our communities.</p>
+        <p>Contact your legislators and tell them why farm to school is important in your community and ask them to support the Farm to School bill (<a class="tlink" href="https://malegislature.gov/Bills/194/S311" target="_blank" rel="noopener">S.311</a> &amp; <a class="tlink" href="https://malegislature.gov/Bills/194/H565/Cosponsor" target="_blank" rel="noopener">H.565</a>) this session.</p>
+        <div class="btns" style="margin-top:24px">
+          <a class="btn btn-primary" href="https://actionnetwork.org/letters/advance-ma-farm-to-school-bill/" target="_blank" rel="noopener">Take Action <span class="arr">→</span></a>
+          <a class="btn btn-outline" href="grant-information.html">Bill background &amp; grant details <span class="arr">→</span></a>
+        </div>
+      </div>
+      <img src="assets/pages/policy-lbp.jpg" alt="Students harvesting vegetables in a school garden">
+    </div>
+  </div>
+</section>
+
+<!-- B: Allied efforts -->
+<section class="section wash-teal" data-screen-label="Allied efforts">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> BEYOND THE BILL</p>
+      <h2 class="display h-sec">ALLIED <span class="em">EFFORTS.</span></h2>
+    </div>
+    <div class="allied">
+      <div class="card">
+        <h3>Universal school meals</h3>
+        <p>As members of the <a class="tlink" href="https://feedkidsma.org/" target="_blank" rel="noopener">Feed Kids Coalition</a>, we celebrate the establishment of universal free meals for all students in Massachusetts public K-12 schools.</p>
+      </div>
+      <div class="card">
+        <h3>A strong local food system</h3>
+        <p>In addition to the Farm to School bill, we support a number of bills to advance an equitable and strong local food system, such as increased funding for the Healthy Incentives Program. See the <a class="tlink" href="https://mafoodsystem.org/projects/legislation/" target="_blank" rel="noopener">legislative priorities of the Massachusetts Food System Collaborative</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- C: Pillars reprise -->
+<section class="section" data-screen-label="Pillars">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> WHAT WE'RE WORKING FOR</p>
+      <h2 class="display h-sec">THREE PRIORITIES, ONE <span class="em">GOAL.</span></h2>
+    </div>
+    <div class="pill3">
+      <div class="col"><div class="num">01</div><h3>Equitable access</h3><p>Maximizing equitable access to school meals for every student.</p></div>
+      <div class="col"><div class="num">02</div><h3>Stronger school meals</h3><p>More locally grown and produced food, and meals that are culturally connected to diverse students.</p></div>
+      <div class="col"><div class="num">03</div><h3>Food education</h3><p>Engaging, garden-based, experiential learning for all students.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- D: CTA -->
+<section class="section band-green ctaband on-green" data-screen-label="Policy CTA" style="background-color: rgb(41, 41, 41)">
+  <div class="wrap">
+    <h2 class="display h-band">YOUR LEGISLATORS NEED TO <span class="em">HEAR FROM YOU.</span></h2>
+    <div class="btns" style="margin-top:30px">
+      <a class="btn btn-primary" href="take-action.html">Take Action <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__top">
+    <div class="footer__brand">
+      <img src="assets/logo-white.png" alt="Massachusetts Food for Massachusetts Kids">
+      <p>Good food and real learning for every Massachusetts student.</p>
+    </div>
+    <div>
+      <h4>Take Action</h4>
+      <ul>
+        <li><a href="take-action.html">Write your legislators</a></li>
+        <li><a href="share-with-your-networks.html">Share with your networks</a></li>
+        <li><a href="join-the-coalition.html">Join the Coalition</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="policy-priorities.html">Policy Priorities</a></li>
+        <li><a href="grant-information.html">Grant Information</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coalition</h4>
+      <ul>
+        <li><a href="our-coalition.html">Our Coalition</a></li>
+        <li><a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© Massachusetts Food for Massachusetts Kids | <a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a> — Coalition coordination provided by <a href="https://massfarmtoschool.org" target="_blank" rel="noopener" style="text-decoration:underline">Massachusetts Farm to School</a>.</span>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(open){
+  document.getElementById('drawer').classList.toggle('open', open);
+  document.getElementById('drawerBg').classList.toggle('open', open);
+}
+</script>
+</body>
+</html>

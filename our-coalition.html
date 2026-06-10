@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Coalition — MA Food for MA Kids</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+<style>
+.coordrow{ display:flex; justify-content:center; gap: clamp(28px,5vw,64px); flex-wrap:wrap; margin-top: 34px; }
+.coordrow a{ display:grid; place-items:center; width: 280px; height: 110px; border:1px solid color-mix(in srgb,var(--ink) 12%, white); border-radius: var(--r); text-decoration:none; font-weight:700; color: var(--green); font-size: 17px; text-align:center; padding: 10px; }
+.coordrow a:hover{ border-color: var(--leaf); background: var(--wash-green); }
+.meetband{ position:relative; overflow:hidden; background: var(--green); padding-block: clamp(64px,9vw,120px); }
+.meetband::before{ content:""; position:absolute; inset:0; background-image: url('assets/pages/coalition-meeting.jpg'); background-size:cover; background-position:center; }
+.meetband::after{ content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(16,28,13,.9) 0%, rgba(16,28,13,.72) 46%, rgba(16,28,13,.34) 78%, rgba(16,28,13,.12) 100%); }
+.meetband__in{ position:relative; z-index:1; }
+.meetband__in > div{ max-width: 600px; }
+.meetband h2{ color: var(--white); margin: 6px 0 18px; }
+.meetband .lede{ color: rgba(255,255,255,.9); max-width: 48ch; }
+.meetband .em{ color: var(--leaf); }
+</style>
+</head>
+<body>
+
+<div class="announce announce__wrap" id="announce">
+  <div class="announce__in">
+    <span>The MA Farm to School bill (S.311 / H.565) passed the Education Committee — <a href="take-action.html">write your legislators →</a></span>
+  </div>
+  <button class="announce__x" aria-label="Dismiss" onclick="document.getElementById('announce').classList.add('is-hidden')">×</button>
+</div>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <nav class="nav">
+      <a href="grant-information.html">Grant Information</a>
+      <a href="policy-priorities.html">Policy Priorities</a>
+      <a href="our-coalition.html" style="color:var(--green)">Our Coalition</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header__cta">
+      <a href="take-action.html" class="btn btn-primary btn-only-desktop">Take Action <span class="arr">→</span></a>
+      <button class="burger" aria-label="Open menu" onclick="toggleDrawer(true)"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer__bg" id="drawerBg" onclick="toggleDrawer(false)"></div>
+<aside class="drawer" id="drawer">
+  <button class="drawer__x" aria-label="Close menu" onclick="toggleDrawer(false)">×</button>
+  <a href="grant-information.html">Grant Information</a>
+  <a href="policy-priorities.html">Policy Priorities</a>
+  <a href="our-coalition.html">Our Coalition</a>
+  <a href="faq.html">FAQ</a>
+  <a href="take-action.html" class="btn btn-primary">Take Action <span class="arr">→</span></a>
+</aside>
+
+<!-- HERO -->
+<section class="phero" data-screen-label="Coalition hero">
+  <div class="wrap">
+    <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> OUR COALITION</p>
+    <h1 class="display h-sec">A GROWING <span class="em">NETWORK.</span></h1>
+    <p class="lede muted">Massachusetts Food for Massachusetts Kids is a collaborative effort of individuals and organizations who believe all students deserve healthy, high quality meals and engaging food education at school.</p>
+  </div>
+</section>
+
+<!-- A: Meeting callout -->
+<section class="section meetband on-green" data-screen-label="Meeting callout">
+  <div class="wrap meetband__in">
+    <div>
+      <p class="eyebrow" style="color:var(--leaf)"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> MONTHLY COALITION MEETING</p>
+      <h2 class="display h-sec">FIRST THURSDAY, <span class="em">2PM.</span></h2>
+      <p class="lede">We meet the first Thursday of each month — all are welcome to join the conversation and help move this work forward.</p>
+      <div class="btns" style="margin-top:28px">
+        <a class="btn btn-primary" href="https://us02web.zoom.us/meeting/register/tZcsc-mhrTItHNGy7DhWRLJR_pCeV44tgBqC" target="_blank" rel="noopener">Register for the meeting <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- B: Partner organizations -->
+<section class="section wash-green" data-screen-label="Partners">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> OUR PARTNERS</p>
+      <h2 class="display h-sec">ONE COALITION, <span class="em">STATEWIDE.</span></h2>
+    </div>
+    <div class="partners">
+      <a href="https://www.backyardgrowers.org" target="_blank" rel="noopener">Backyard Growers</a>
+      <a href="https://www.bostonareagleaners.org/" target="_blank" rel="noopener">Boston Area Gleaners</a>
+      <a href="https://www.centralmassgrown.org" target="_blank" rel="noopener">Central Mass Grown</a>
+      <a href="https://www.chicopeeps.org/en-US" target="_blank" rel="noopener">Chicopee Public Schools</a>
+      <a href="http://commonwealthkitchen.org" target="_blank" rel="noopener">Commonwealth Kitchen</a>
+      <a href="https://www.buylocalfood.org" target="_blank" rel="noopener">Community Involved in Sustaining Agriculture (CISA)</a>
+      <span>Fall River WIC Nutrition Program</span>
+      <a href="https://www.farmtoinstitution.org" target="_blank" rel="noopener">Farm to Institution New England</a>
+      <a href="https://www.foodbankwma.org" target="_blank" rel="noopener">Food Bank of Western Massachusetts</a>
+      <a href="https://foodcorps.org/" target="_blank" rel="noopener">FoodCorps</a>
+      <a href="https://www.foodcorps.org" target="_blank" rel="noopener">FoodCorps Massachusetts</a>
+      <a href="https://www.fccdc.org" target="_blank" rel="noopener">Franklin County Community Development Corporation</a>
+      <a href="https://goodeggmarketing.com" target="_blank" rel="noopener">Good Egg Marketing</a>
+      <a href="https://www.growfoodnorthampton.org" target="_blank" rel="noopener">Grow Food Northampton</a>
+      <a href="https://noharm.org" target="_blank" rel="noopener">Healthcare Without Harm</a>
+      <a href="https://healthychelsea.org" target="_blank" rel="noopener">Healthy Chelsea</a>
+      <a href="https://www.innovationcharter.org" target="_blank" rel="noopener">Innovation Academy Charter School</a>
+      <a href="https://www.igimv.org" target="_blank" rel="noopener">Island Grown Initiative</a>
+      <a href="https://www.lincnet.org" target="_blank" rel="noopener">Lincoln Public Schools</a>
+      <a href="https://www.marioninstitute.org" target="_blank" rel="noopener">The Marion Institute</a>
+      <a href="https://massmees.org" target="_blank" rel="noopener">Massachusetts Environmental Education Society</a>
+      <a href="https://www.massfarmtoschool.org" target="_blank" rel="noopener">Massachusetts Farm to School</a>
+      <a href="https://mafoodsystem.org" target="_blank" rel="noopener">Massachusetts Food System Collaborative</a>
+      <a href="https://www.millcitygrows.org" target="_blank" rel="noopener">Mill City Grows</a>
+      <a href="https://www.myersproduce.com/" target="_blank" rel="noopener">Myers Produce</a>
+      <a href="https://newbedfordschools.org" target="_blank" rel="noopener">New Bedford Public Schools</a>
+      <a href="https://nesfp.nutrition.tufts.edu/" target="_blank" rel="noopener">New Entry Sustainable Farming Project</a>
+      <a href="https://www.nokidhungry.org" target="_blank" rel="noopener">No Kid Hungry</a>
+      <a href="https://www.namanet.org" target="_blank" rel="noopener">Northwest Atlantic Marine Alliance</a>
+      <a href="https://www.oakdalefarmscountrybarn.com" target="_blank" rel="noopener">Oakdale Farms</a>
+      <a href="https://www.projectbread.org" target="_blank" rel="noopener">Project Bread</a>
+      <a href="https://www.recworcester.org" target="_blank" rel="noopener">Regional Environmental Council</a>
+      <a href="https://www.rescuingleftovercuisine.org/branch/massachusetts" target="_blank" rel="noopener">Rescuing Leftover Cuisine</a>
+      <a href="https://esrag.org/" target="_blank" rel="noopener">Rotary International – Environmental Sustainability Rotary Action Group (Cape Cod)</a>
+      <a href="https://www.salemfoodpolicy.com/" target="_blank" rel="noopener">Salem Food Policy Council</a>
+      <a href="https://www.salemk12.org" target="_blank" rel="noopener">Salem Public Schools</a>
+      <a href="https://www.schoolnutrition.info" target="_blank" rel="noopener">School Nutrition Association of Massachusetts</a>
+      <a href="http://www.schoolsprouts.org" target="_blank" rel="noopener">School Sprouts Educational Gardens</a>
+      <a href="https://www.shareourstrength.org" target="_blank" rel="noopener">Share Our Strength</a>
+      <a href="https://www.sbeaccion.org" target="_blank" rel="noopener">South Boston En Acción</a>
+      <a href="https://www.sustainable-nantucket.org" target="_blank" rel="noopener">Sustainable Nantucket</a>
+      <a href="https://threesistersgarden.org" target="_blank" rel="noopener">Three Sisters Garden Project</a>
+      <a href="https://www.webster-schools.org" target="_blank" rel="noopener">Webster Public Schools</a>
+    </div>
+  </div>
+</section>
+
+<!-- C: Coordination credit -->
+<section class="section" data-screen-label="Coordination">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow" style="justify-content:center"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> COALITION COORDINATION PROVIDED BY</p>
+    <div class="coordrow">
+      <a href="https://www.massfarmtoschool.org" target="_blank" rel="noopener">Massachusetts Farm to School</a>
+      <a href="https://www.foodcorps.org" target="_blank" rel="noopener">FoodCorps MA</a>
+    </div>
+  </div>
+</section>
+
+<!-- D: Join CTA -->
+<section class="section band-green ctaband on-green" data-screen-label="Join CTA" style="background-color: rgb(37, 37, 37)">
+  <div class="wrap">
+    <h2 class="display h-band">ADD YOUR ORGANIZATION TO THE <span class="em">LIST.</span></h2>
+    <div class="btns" style="margin-top:30px">
+      <a class="btn btn-primary" href="join-the-coalition.html">Join the Coalition <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__top">
+    <div class="footer__brand">
+      <img src="assets/logo-white.png" alt="Massachusetts Food for Massachusetts Kids">
+      <p>Good food and real learning for every Massachusetts student.</p>
+    </div>
+    <div>
+      <h4>Take Action</h4>
+      <ul>
+        <li><a href="take-action.html">Write your legislators</a></li>
+        <li><a href="share-with-your-networks.html">Share with your networks</a></li>
+        <li><a href="join-the-coalition.html">Join the Coalition</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="policy-priorities.html">Policy Priorities</a></li>
+        <li><a href="grant-information.html">Grant Information</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coalition</h4>
+      <ul>
+        <li><a href="our-coalition.html">Our Coalition</a></li>
+        <li><a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© Massachusetts Food for Massachusetts Kids | <a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a> — Coalition coordination provided by <a href="https://massfarmtoschool.org" target="_blank" rel="noopener" style="text-decoration:underline">Massachusetts Farm to School</a>.</span>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(open){
+  document.getElementById('drawer').classList.toggle('open', open);
+  document.getElementById('drawerBg').classList.toggle('open', open);
+}
+</script>
+</body>
+</html>
