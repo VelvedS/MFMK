@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="pages.css">
 <style>
 .hero-green{ position:relative; overflow:hidden; }
-.hero-green::before{ content:""; position:absolute; inset:0; background-image:url('assets/pages/join-hero.jpg'); background-size:cover; background-position:center; }
+.hero-green::before{ content:""; position:absolute; inset:0; background-image:url('assets/pages/join-hero-cafeteria.jpg'); background-size:cover; background-position:center; }
 .hero-green::after{ content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(16,28,13,.92) 0%, rgba(16,28,13,.74) 48%, rgba(16,28,13,.36) 80%, rgba(16,28,13,.12) 100%); }
 .hero-green .wrap{ position:relative; z-index:1; }
-.expectgrid{ display:grid; grid-template-columns: 1fr 0.82fr; gap: clamp(32px,5vw,64px); align-items:center; }
-.expectgrid__media{ margin:0; align-self:stretch; }
-.expectgrid__media img{ width:100%; height:100%; min-height:340px; object-fit:cover; border-radius: var(--r-lg); }
-@media (max-width:860px){ .expectgrid{ grid-template-columns:1fr; } .expectgrid__media img{ min-height:280px; } }
+.expectgrid{ display:grid; grid-template-columns: 1fr 0.82fr; gap: clamp(32px,5vw,64px); align-items:stretch; }
+.expectgrid__media{ margin:0; min-height:0; }
+.expectgrid__media img{ display:block; width:100%; height:100%; object-fit:cover; border-radius: var(--r-lg); }
+@media (max-width:860px){ .expectgrid{ grid-template-columns:1fr; } .expectgrid__media img{ height:280px; } }
 .formband{ position:relative; overflow:hidden; }
 .formband::before{ content:""; position:absolute; inset:0; background-image:url('assets/pages/join-form-bg.jpg'); background-size:cover; background-position:center; }
 .formband::after{ content:""; position:absolute; inset:0; background: color-mix(in srgb, var(--green) 86%, transparent); }
@@ -35,7 +35,7 @@
 
 <header class="header">
   <div class="wrap header__in">
-    <a class="header__logo" href="MA Food for MA Kids - V5 Immersive.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
     <nav class="nav">
       <a href="grant-information.html">Grant Information</a>
       <a href="policy-priorities.html">Policy Priorities</a>
@@ -91,7 +91,7 @@
       </div>
     </div>
    </div>
-   <figure class="expectgrid__media"><img src="assets/pages/join-expect.jpg" alt="A volunteer holding a crate of freshly harvested vegetables"></figure>
+   <figure class="expectgrid__media"><img src="assets/pages/join-kid-eating.jpg" alt="A smiling student enjoying a school lunch tray" style="height: 500px"></figure>
   </div>
 </section>
 
@@ -161,7 +161,8 @@
     </div>
   </div>
   <div class="wrap footer__bottom">
-    <span>© Massachusetts Food for Massachusetts Kids | <a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a> — Coalition coordination provided by <a href="https://massfarmtoschool.org" target="_blank" rel="noopener" style="text-decoration:underline">Massachusetts Farm to School</a>.</span>
+    <span>© Massachusetts Food for Massachusetts Kids | <a href="mailto:info@mafoodformakids.org">info@mafoodformakids.org</a></span>
+    <span>Coalition coordination provided by <a href="https://massfarmtoschool.org" target="_blank" rel="noopener" style="text-decoration:underline">Massachusetts Farm to School</a>.</span>
   </div>
 </footer>
 

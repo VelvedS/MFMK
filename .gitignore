@@ -1,2 +1,17 @@
+# macOS / Windows / editor noise
 .DS_Store
-.vercel
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Editor folders
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
+
+# Local env
+.env
+.env.local

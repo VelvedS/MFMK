@@ -221,6 +221,3 @@ h1,h2,h3{ margin:0; }
 .wash-green{ background: var(--wash-green); }
 .wash-teal{ background: var(--wash-teal); }
 
-/* image slot baseline */
-image-slot{ display:block; background: var(--wash-green); }
-.band-green image-slot{ background: rgba(255,255,255,.08); }
