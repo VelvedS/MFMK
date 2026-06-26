@@ -1,4 +1,10 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/MA%20Food%20for%20MA%20Kids%20-%20V4%20Magazine.html"
+    }
+  ]
 }

@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Take Action — MA Food for MA Kids</title>
-<link rel="stylesheet" href="fonts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="pages.css">
 <style>
@@ -19,7 +21,12 @@
 .meet__imgs img{ width:100%; height: 230px; object-fit:cover; border-radius: var(--r); }
 @media (max-width:860px){ .meet{ grid-template-columns:1fr; } }
 .three{ display:grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-bottom: 34px; }
-.three p{ margin:0; color: rgba(255,255,255,.9); font-size: 16.5px; border-top: 3px solid var(--leaf); padding-top: 16px; }
+.three p{ margin:0; color: color-mix(in srgb,var(--ink) 78%, white); font-size: 16.5px; border-top: 3px solid var(--leaf); padding-top: 16px; }
+.ampways{ list-style:none; margin: 26px 0 0; padding:0; display:flex; flex-direction:column; gap: 18px; max-width: 56ch; }
+.ampways li{ display:grid; grid-template-columns: 44px 1fr; gap: 16px; align-items:flex-start; }
+.ampways .n{ font-family: var(--display); font-size: 22px; color: var(--white); background: var(--green); width:44px; height:44px; border-radius:50%; display:grid; place-items:center; line-height:1; }
+.ampways p{ margin:0; font-size: 16.5px; color: color-mix(in srgb,var(--ink) 80%, white); }
+.ampways strong{ color: var(--ink); }
 @media (max-width:860px){ .three{ grid-template-columns:1fr; } }
 </style>
 </head>
@@ -34,7 +41,7 @@
 
 <header class="header">
   <div class="wrap header__in">
-    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <a class="header__logo" href="MA Food for MA Kids - V5 Immersive.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
     <nav class="nav">
       <a href="grant-information.html">Grant Information</a>
       <a href="policy-priorities.html">Policy Priorities</a>
@@ -115,24 +122,21 @@
 
 <!-- C: Meet with your legislator -->
 <section class="section" data-screen-label="Meet your legislator">
-  <div class="wrap meet">
+  <div class="wrap tc" style="align-items:stretch">
     <div>
       <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> BUILD A RELATIONSHIP</p>
       <h2 class="display h-sec">MEET WITH YOUR <span class="em">LEGISLATOR.</span></h2>
-      <p>One of the best ways to ensure that your issue remains top of mind for legislators is to build a relationship by meeting one-on-one with your local legislator(s). That’s why we are asking all members and friends of the MA Food for MA Kids Coalition to contact your legislators to tell them why farm to school is important in your community and ask them to support the Farm to School bill.</p>
-      <p>Having your legislators see what farm to school looks like in person can be one of the most impactful ways to create new farm to school champions in the State House. Invite your legislators to join your school for a lunch that features local foods, see students enjoying a lesson in a school garden, or participate in any other aspect of your farm to school program. You don’t need to put on a whole special event for them to understand the power of your program.</p>
-      <div class="reslist">
-        <a href="https://www.massfarmtoschool.org/wp-content/uploads/2023/09/NFSN-HostingLegislatorTips.pdf" target="_blank" rel="noopener"><span class="arr">→</span> Hosting toolkit (National Farm to School Network)</a>
-        <a href="https://malegislature.gov/Search/FindMyLegislator" target="_blank" rel="noopener"><span class="arr">→</span> Find your legislator</a>
-        <a href="https://mafoodformakids.org/s/Legislator-Meeting-Request-Tips.pdf" target="_blank" rel="noopener"><span class="arr">→</span> Tips for requesting a meeting</a>
-        <a href="https://mafoodformakids.org/s/Legislator-Meeting-Agenda-Talking-Points.pdf" target="_blank" rel="noopener"><span class="arr">→</span> Sample meeting agenda &amp; talking points</a>
-        <a href="mailto:lisa@massfarmtoschool.org"><span class="arr">→</span> If you meet with your legislator, let us know!</a>
-      </div>
+      <p class="lede" style="max-width:56ch; margin-top:14px;">A one-on-one meeting is the single most powerful way to keep farm to school on your legislator's radar — and seeing it in action makes the case even stronger.</p>
+      <ol class="ampways" style="margin-top:28px">
+        <li><span class="n">1</span><p><strong>Find your legislator.</strong> Look up your state rep and senator on <a class="tlink" href="https://malegislature.gov/Search/FindMyLegislator" target="_blank" rel="noopener">the MA Legislature site</a>.</p></li>
+        <li><span class="n">2</span><p><strong>Request the meeting.</strong> Use our <a class="tlink" href="https://mafoodformakids.org/s/Legislator-Meeting-Request-Tips.pdf" target="_blank" rel="noopener">tips for requesting a meeting</a> and a <a class="tlink" href="https://mafoodformakids.org/s/Legislator-Meeting-Agenda-Talking-Points.pdf" target="_blank" rel="noopener">sample agenda &amp; talking points</a> to lead the conversation.</p></li>
+        <li><span class="n">3</span><p><strong>Invite them to your school.</strong> A cafeteria visit or a school-garden lesson is one of the most effective ways to create a farm to school champion. The <a class="tlink" href="https://www.massfarmtoschool.org/wp-content/uploads/2023/09/NFSN-HostingLegislatorTips.pdf" target="_blank" rel="noopener">National Farm to School Network hosting toolkit</a> walks you through how — no big event required.</p></li>
+      </ol>
+      <p style="margin-top:26px; font-size:15.5px; color: color-mix(in srgb,var(--ink) 65%, white);">Met with your legislator? <a class="tlink" href="mailto:lisa@massfarmtoschool.org">Let us know</a> so we can track our progress.</p>
     </div>
-    <div class="meet__imgs">
-      <img src="assets/pages/action-salemgarden.jpg" alt="Students working in the Salem High School garden">
-      <img src="assets/pages/action-butternut.jpg" alt="Bins of locally grown butternut squash from Czajkowski Farm">
-    </div>
+    <figure class="tc__media" style="height:100%">
+      <img src="assets/pages/action-salemgarden.jpg" alt="Students working in the Salem High School garden" style="height:100%; min-height:520px">
+    </figure>
   </div>
 </section>
 
@@ -162,25 +166,33 @@
   </div>
 </section>
 
-<!-- F: Share teaser + closing CTA -->
-<section class="section band-green on-green" data-screen-label="Share CTA" style="background-color: rgb(32, 32, 31); padding: 70px 0px">
-  <div class="wrap">
-    <div class="three">
-      <p>Encourage your friends &amp; colleagues to ask their legislators to co-sponsor the farm to school grant bill.</p>
-      <p>Help us build a large and diverse group of advocates advancing MA Food for MA Kids.</p>
-      <p>Share why farm to school is important with your legislators.</p>
+<!-- F: Amplify the campaign -->
+<section class="section" data-screen-label="Share CTA" style="background-color: #f2f7ea; padding: 70px 0px">
+  <div class="wrap tc">
+    <div>
+      <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> SPREAD THE WORD</p>
+      <h2 class="display h-sec">AMPLIFY THE <span class="em">CAMPAIGN.</span></h2>
+      <p class="lede" style="max-width:56ch; margin-top:14px;">Your voice multiplies when you bring others along. Help us reach more advocates, more legislators, and more communities across the Commonwealth.</p>
+      <ol class="ampways">
+        <li><span class="n">1</span><p><strong>Recruit co-sponsors.</strong> Encourage friends and colleagues to ask their legislators to co-sponsor the farm to school grant bill.</p></li>
+        <li><span class="n">2</span><p><strong>Grow the coalition.</strong> Help us build a larger, more diverse group of advocates advancing MA Food for MA Kids.</p></li>
+        <li><span class="n">3</span><p><strong>Share your why.</strong> Tell your legislators why farm to school matters in your community.</p></li>
+      </ol>
+      <div class="btns" style="margin-top:32px">
+        <a class="btn btn-primary" href="share-with-your-networks.html">Social media templates <span class="arr">→</span></a>
+        <a class="btn btn-outline" href="https://actionnetwork.org/letters/advance-ma-farm-to-school-bill?source=direct_link&" target="_blank" rel="noopener">Write your legislators <span class="arr">→</span></a>
+      </div>
     </div>
-    <div class="btns">
-      <a class="btn btn-primary" href="share-with-your-networks.html">Social media templates <span class="arr">→</span></a>
-      <a class="btn btn-outline" href="https://actionnetwork.org/letters/advance-ma-farm-to-school-bill?source=direct_link&" target="_blank" rel="noopener">Write your legislators <span class="arr">→</span></a>
-    </div>
+    <figure class="tc__media">
+      <img src="assets/pages/coalition-meeting.jpg" alt="Coalition members gathered to advance farm to school in Massachusetts">
+    </figure>
   </div>
 </section>
 
 <footer class="footer">
   <div class="wrap footer__top">
     <div class="footer__brand">
-      <img src="assets/logo-white.png" alt="Massachusetts Food for Massachusetts Kids">
+      <img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids">
       <p>Good food and real learning for every Massachusetts student.</p>
     </div>
     <div>

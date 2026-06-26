@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Our Coalition — MA Food for MA Kids</title>
-<link rel="stylesheet" href="fonts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="pages.css">
 <style>
@@ -12,7 +14,7 @@
 .coordrow a{ display:grid; place-items:center; width: 280px; height: 110px; border:1px solid color-mix(in srgb,var(--ink) 12%, white); border-radius: var(--r); text-decoration:none; font-weight:700; color: var(--green); font-size: 17px; text-align:center; padding: 10px; }
 .coordrow a:hover{ border-color: var(--leaf); background: var(--wash-green); }
 .meetband{ position:relative; overflow:hidden; background: var(--green); padding-block: clamp(64px,9vw,120px); }
-.meetband::before{ content:""; position:absolute; inset:0; background-image: url('assets/pages/coalition-meeting.jpg'); background-size:cover; background-position:center; }
+.meetband::before{ content:""; position:absolute; inset:0; background-image: url('assets/pages/coalition-meeting-room.jpg'); background-size:cover; background-position:center; }
 .meetband::after{ content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(16,28,13,.9) 0%, rgba(16,28,13,.72) 46%, rgba(16,28,13,.34) 78%, rgba(16,28,13,.12) 100%); }
 .meetband__in{ position:relative; z-index:1; }
 .meetband__in > div{ max-width: 600px; }
@@ -32,7 +34,7 @@
 
 <header class="header">
   <div class="wrap header__in">
-    <a class="header__logo" href="index.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
+    <a class="header__logo" href="MA Food for MA Kids - V5 Immersive.html" aria-label="MA Food for MA Kids home"><img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids"></a>
     <nav class="nav">
       <a href="grant-information.html">Grant Information</a>
       <a href="policy-priorities.html">Policy Priorities</a>
@@ -146,7 +148,7 @@
 </section>
 
 <!-- D: Join CTA -->
-<section class="section band-green ctaband on-green" data-screen-label="Join CTA" style="background-color: rgb(37, 37, 37)">
+<section class="section ctaband" data-screen-label="Join CTA" style="background-color: #f2f7ea">
   <div class="wrap">
     <h2 class="display h-band">ADD YOUR ORGANIZATION TO THE <span class="em">LIST.</span></h2>
     <div class="btns" style="margin-top:30px">
@@ -158,7 +160,7 @@
 <footer class="footer">
   <div class="wrap footer__top">
     <div class="footer__brand">
-      <img src="assets/logo-white.png" alt="Massachusetts Food for Massachusetts Kids">
+      <img src="assets/logo.png" alt="Massachusetts Food for Massachusetts Kids">
       <p>Good food and real learning for every Massachusetts student.</p>
     </div>
     <div>

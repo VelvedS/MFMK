@@ -118,6 +118,14 @@
 .reslist a:hover{ color: var(--teal); }
 .reslist .arr{ flex: none; }
 
+/* ---------- graphic download cards (image above button) ---------- */
+.graphicgrid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 30px; }
+.graphicgrid.solo{ grid-template-columns: minmax(0, 420px); justify-content: center; }
+.graphiccard{ background: var(--white); border: 1px solid color-mix(in srgb,var(--ink) 12%, white); border-radius: var(--r); padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 16px; }
+.graphiccard__img{ width: 100%; aspect-ratio: 1 / 1; object-fit: contain; background: var(--wash-green); border-radius: var(--r-sm); }
+.graphiccard .btn{ align-self: flex-start; }
+@media (max-width: 680px){ .graphicgrid{ grid-template-columns: 1fr; } }
+
 /* ---------- CTA band ---------- */
 .ctaband{ text-align: center; }
 .ctaband h2{ margin-inline: auto; }

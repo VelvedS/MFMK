@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MA Food for MA Kids — Home (V5 · Immersive)</title>
-<link rel="stylesheet" href="fonts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
 /* ===== V5 — Immersive: left-aligned wording over a full-bleed hero image ===== */
@@ -47,7 +49,7 @@
 /* feature — photo left green band */
 .v5feature__grid{ display:grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(32px,5vw,68px); align-items:center; padding-block: clamp(56px,7vw,96px); }
 .v5feature__media image-slot{ width:100%; height: clamp(320px,38vw,460px); border-radius: var(--r-lg); }
-.v5feature .lede{ color: rgba(255,255,255,.9); max-width: 50ch; }
+.v5feature .lede{ color: color-mix(in srgb,var(--ink) 78%, white); max-width: 50ch; }
 .v5feature em{ font-style:normal; font-weight:700; }
 .v5feature h2{ margin: 6px 0 22px; }
 .v5feature .btns{ margin-top: 30px; }
@@ -65,6 +67,8 @@
 .v5coal__count .muted{ line-height:1.25; white-space:nowrap; font-size:17px; }
 .v5coal__count b{ font-family: var(--display); font-size: 30px; color: var(--green); line-height:1; }
 .v5logowall{ display:grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.v5coal__media{ margin:0; align-self:stretch; }
+.v5coal__media img{ width:100%; height:100%; min-height: 380px; max-height: 520px; object-fit:cover; border-radius: var(--r-lg); }
 .v5logo{ margin:0; display:flex; flex-direction:column; gap:8px; }
 .v5logo image-slot{ display:block; width:100%; height:88px; border:1px solid color-mix(in srgb,var(--ink) 12%, white); border-radius: var(--r-sm); background:var(--white); }
 .v5logo image-slot::part(image){ box-sizing:border-box; padding:12px 20px; }
@@ -86,15 +90,6 @@
   .v5hero__scrim{ background: linear-gradient(180deg, rgba(16,28,13,.55) 0%, rgba(16,28,13,.82) 100%); }
 }
 
-/* white footer (V5 only) */
-.footer{ background: var(--white); color: var(--ink); border-top: 1px solid color-mix(in srgb, var(--ink) 12%, white); }
-.footer__brand p{ color: color-mix(in srgb, var(--ink) 68%, white); }
-.footer h4{ color: var(--green); }
-.footer a{ color: color-mix(in srgb, var(--ink) 78%, white); }
-.footer a:hover{ color: var(--green); }
-.footer__bottom{ border-top:1px solid color-mix(in srgb, var(--ink) 12%, white); color: color-mix(in srgb, var(--ink) 60%, white); }
-.footer__social a{ border-color: color-mix(in srgb, var(--ink) 22%, white); color: var(--ink); }
-.footer__social a:hover{ border-color: var(--green); background: var(--wash-green); }
 </style>
 </head>
 <body>
@@ -153,7 +148,7 @@
 </section>
 
 <!-- MISSION -->
-<section class="section band-green v5mission" style="background-color: rgb(34, 34, 34)">
+<section class="section v5mission" style="background-color: #f2f7ea">
   <div class="wrap">
     <h2 class="display h-band">STRENGTHENING SCHOOL FOOD ACROSS THE <span class="em">COMMONWEALTH.</span></h2>
     <p class="lede muted" style="font-size: 24px">We help schools and districts give students healthier meals, more local food, and richer food education.</p>
@@ -195,13 +190,13 @@
 </section>
 
 <!-- FEATURE -->
-<section class="band-green v5feature on-green" id="grant">
+<section class="v5feature" id="grant" style="background-color: #f2f7ea">
   <div class="wrap v5feature__grid">
     <div class="v5feature__media">
-      <image-slot id="v5-feature" src="assets/dropped/v5-feature.webp" shape="rounded" radius="22" placeholder="Students with local produce"></image-slot>
+      <image-slot id="v5-feature" shape="rounded" radius="22" placeholder="Students with local produce" src="assets/dropped/v5-feature.webp"></image-slot>
     </div>
     <div>
-      <p class="eyebrow" style="color:var(--leaf)"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> OUR CURRENT PRIORITY</p>
+      <p class="eyebrow"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> OUR CURRENT PRIORITY</p>
       <h2 class="display h-sec">MAKE FARM TO SCHOOL <span class="em">PERMANENT.</span></h2>
       <p class="lede">We're working to pass <em>An Act establishing the Massachusetts Farm to School Program</em> (S.311 / H.565), which would codify the MA FRESH grant program and create a local food incentive within the Department of Elementary and Secondary Education. The bill passed the Joint Committee on Education unanimously and is now in Ways &amp; Means.</p>
       <div class="btns">
@@ -213,7 +208,7 @@
 </section>
 
 <!-- STATS -->
-<section class="section wash-green">
+<section class="section wash-green" style="background-color: rgb(234, 246, 246)">
   <div class="wrap">
     <div class="v5stats__head">
       <p class="eyebrow leaf"><svg class="sprout" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9 0-9 0 0-5 .5-7-2.5C2 7 5 4 5 4s4 1 6 4c0-1 1-5 1-5s1 4 1 5c2-3 6-4 6-4s3 3 0 6.5C17 13.5 12 13 12 13"/></svg> BY THE NUMBERS</p>
@@ -238,23 +233,18 @@
       <p class="muted">Massachusetts Food for Massachusetts Kids is a collaborative effort of organizations and individuals who believe every student deserves healthy meals and food education at school. Coordinated by Massachusetts Farm to School and FoodCorps MA.</p>
       <div class="btns" style="margin-top:28px"><a href="#coalition" class="btn btn-primary">Join the Coalition <span class="arr">→</span></a></div>
     </div>
-    <div class="v5logowall">
-      <figure class="v5logo"><image-slot id="v5-logo-1" src="assets/dropped/v5-logo-1.webp" shape="rect" fit="contain" placeholder="Drop logo" style="padding: 12px"></image-slot><figcaption>Massachusetts Farm to School</figcaption></figure>
-      <figure class="v5logo"><image-slot id="v5-logo-2" shape="rect" fit="contain" placeholder="Drop logo"></image-slot><figcaption>FoodCorps Massachusetts</figcaption></figure>
-      <figure class="v5logo"><image-slot id="v5-logo-3" shape="rect" fit="contain" placeholder="Drop logo"></image-slot><figcaption>Backyard Growers</figcaption></figure>
-      <figure class="v5logo"><image-slot id="v5-logo-4" shape="rect" fit="contain" placeholder="Drop logo"></image-slot><figcaption>Boston Area Gleaners</figcaption></figure>
-      <figure class="v5logo"><image-slot id="v5-logo-5" shape="rect" fit="contain" placeholder="Drop logo"></image-slot><figcaption>Central Mass Grown</figcaption></figure>
-      <figure class="v5logo"><image-slot id="v5-logo-6" shape="rect" fit="contain" placeholder="Drop logo"></image-slot><figcaption>Chicopee Public Schools</figcaption></figure>
-    </div>
+    <figure class="v5coal__media">
+      <img src="assets/pages/coalition-watering-seeds.jpg" alt="A young student tends to a school garden, watering freshly planted seedlings with an orange watering can">
+    </figure>
   </div>
 </section>
 
 <!-- CLOSING -->
-<section class="section band-green v5closing" id="take-action" style="background-color: rgb(34, 34, 34)">
+<section class="section v5closing" id="take-action" style="background-color: #f2f7ea">
   <div class="wrap">
     <h2 class="display h-band">ADD YOUR <span class="em">VOICE.</span></h2>
     <p class="lede muted" style="font-size: 20px">Your voice makes this real. Contact your legislators, submit testimony, or join our monthly coalition meeting (first Thursday, 2pm).</p>
-    <div class="btns on-green">
+    <div class="btns">
       <a href="#take-action" class="btn btn-primary">Take Action <span class="arr">→</span></a>
       <a href="#coalition" class="btn btn-outline">Join the Coalition</a>
     </div>
