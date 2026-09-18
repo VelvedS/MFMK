@@ -47,6 +47,7 @@
 
 /* feature — photo left green band */
 .v5feature__grid{ display:grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(32px,5vw,68px); align-items:center; padding-block: clamp(56px,7vw,96px); }
+.v5feature__media img{ width:100%; height: clamp(320px,38vw,460px); object-fit:cover; border-radius: var(--r-lg); }
 .v5feature .lede{ color: color-mix(in srgb,var(--ink) 78%, white); max-width: 50ch; }
 .v5feature em{ font-style:normal; font-weight:700; }
 .v5feature h2{ margin: 6px 0 22px; }
@@ -83,6 +84,7 @@
   .v5feature__media{ order:-1; }
   .v5stats{ grid-template-columns: 1fr 1fr; gap: 40px 24px; }
   .v5logowall{ grid-template-columns: repeat(2,1fr); }
+  .v5coal__count .muted{ white-space:normal; }
   .v5hero__scrim{ background: linear-gradient(180deg, rgba(16,28,13,.55) 0%, rgba(16,28,13,.82) 100%); }
 }
 
