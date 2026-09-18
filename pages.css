@@ -125,6 +125,7 @@
 .graphiccard__img{ width: 100%; aspect-ratio: 1 / 1; object-fit: contain; background: var(--wash-green); border-radius: var(--r-sm); }
 .graphiccard .btn{ align-self: flex-start; }
 @media (max-width: 680px){ .graphicgrid{ grid-template-columns: 1fr; } }
+@media (max-width: 860px){ .graphiccard .btn{ white-space: normal; } }
 
 /* ---------- CTA band ---------- */
 .ctaband{ text-align: center; }
